@@ -1,12 +1,11 @@
 <script setup lang="ts">
 //いけるやつ
-//(17,29)
-//
+//(17,23)(17,29)(17,41)(23,29)(41,59)
 
 // p(17以上の素数)を用意
-const p = 17n;
+const p = 41n;
 // q(17以上の素数)を用意
-const q = 29n;
+const q = 59n;
 // N(pq)を用意 公開鍵
 const N = p * q;
 // eを用意
@@ -87,7 +86,7 @@ const tableData = M.map((item, index) => ({
     <p>p：{{ p }}</p>
     <p>q：{{ q }}</p>
     <p>e：{{ e }}</p>
-    <p>d：{{ d }}</p>
+    <p>モジュラ逆数 d：{{ d }}</p>
     <p>(p-1)(q-1)：{{ l }}</p>
   </div>
   <div>
